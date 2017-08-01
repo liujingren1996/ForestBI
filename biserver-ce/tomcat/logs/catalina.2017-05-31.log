@@ -1,0 +1,128 @@
+五月 31, 2017 1:15:00 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\JAVA\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\JAVA\JDK\bin;D:\JAVA\JDK\jre\bin;;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files (x86)\StormII\Codec;C:\Program Files (x86)\StormII;.
+五月 31, 2017 1:15:00 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+五月 31, 2017 1:15:00 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 958 ms
+五月 31, 2017 1:15:00 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+五月 31, 2017 1:15:00 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.29
+五月 31, 2017 1:15:00 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor pentaho.xml
+五月 31, 2017 1:15:02 下午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+信息: WARNING: Security role name PENTAHO_ADMIN used in an <auth-constraint> without being defined in a <security-role>
+五月 31, 2017 1:15:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ChartBase
+五月 31, 2017 1:15:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory pentaho-style
+五月 31, 2017 1:15:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+五月 31, 2017 1:15:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory sw-style
+五月 31, 2017 1:15:20 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+五月 31, 2017 1:15:20 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+五月 31, 2017 1:15:20 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/28  config=null
+五月 31, 2017 1:15:20 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 20257 ms
+五月 31, 2017 3:57:33 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\JAVA\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\JAVA\JDK\bin;D:\JAVA\JDK\jre\bin;;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files (x86)\StormII\Codec;C:\Program Files (x86)\StormII;.
+五月 31, 2017 3:57:33 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+五月 31, 2017 3:57:33 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 755 ms
+五月 31, 2017 3:57:33 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+五月 31, 2017 3:57:33 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.29
+五月 31, 2017 3:57:33 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor pentaho.xml
+五月 31, 2017 3:57:34 下午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+信息: WARNING: Security role name PENTAHO_ADMIN used in an <auth-constraint> without being defined in a <security-role>
+五月 31, 2017 3:57:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ChartBase
+五月 31, 2017 3:57:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory pentaho-style
+五月 31, 2017 3:57:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+五月 31, 2017 3:57:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory sw-style
+五月 31, 2017 3:57:51 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+五月 31, 2017 3:57:51 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+五月 31, 2017 3:57:51 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/29  config=null
+五月 31, 2017 3:57:52 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 18343 ms
+五月 31, 2017 4:09:51 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\JAVA\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\JAVA\JDK\bin;D:\JAVA\JDK\jre\bin;;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files (x86)\StormII\Codec;C:\Program Files (x86)\StormII;.
+五月 31, 2017 4:09:51 下午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+五月 31, 2017 4:09:51 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 740 ms
+五月 31, 2017 4:09:51 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+五月 31, 2017 4:09:51 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.29
+五月 31, 2017 4:09:51 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor pentaho.xml
+五月 31, 2017 4:09:52 下午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+信息: WARNING: Security role name PENTAHO_ADMIN used in an <auth-constraint> without being defined in a <security-role>
+五月 31, 2017 4:10:08 下午 com.sun.jersey.api.core.PackagesResourceConfig init
+信息: Scanning for root resource and provider classes in the packages:
+  org.saiku.web
+五月 31, 2017 4:10:08 下午 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+信息: Root resource classes found:
+  class org.saiku.web.rest.resources.QueryResource
+  class org.saiku.web.rest.resources.BasicRepositoryResource2
+  class org.saiku.web.rest.resources.StatisticsResource
+  class org.saiku.web.rest.resources.SessionResource
+  class org.saiku.web.rest.resources.DataSourceResource
+  class org.saiku.web.rest.resources.FilterRepositoryResource
+  class org.saiku.web.rest.resources.OlapDiscoverResource
+  class org.saiku.web.rest.resources.BasicRepositoryResource
+  class org.saiku.web.rest.resources.ExporterResource
+  class org.saiku.web.rest.resources.BasicTagRepositoryResource
+  class org.saiku.web.rest.resources.InfoResource
+五月 31, 2017 4:10:08 下午 com.sun.jersey.api.core.ScanningResourceConfig init
+信息: No provider classes found.
+五月 31, 2017 4:10:08 下午 org.codehaus.enunciate.modules.jersey.EnunciateJerseyServletContainer configure
+信息: org.codehaus.enunciate.modules.amf.JAXRSProvider not found.
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, datasourceResourceBean, of type org.saiku.web.rest.resources.DataSourceResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, olapDiscoverBean, of type org.saiku.web.rest.resources.OlapDiscoverResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, queryResource, of type org.saiku.web.rest.resources.QueryResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, sessionResource, of type org.saiku.web.rest.resources.SessionResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, repositoryBean, of type org.saiku.plugin.resources.PentahoRepositoryResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, repositoryBean2, of type org.saiku.plugin.resources.PentahoRepositoryResource2 as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, pluginResource, of type org.saiku.plugin.resources.PluginResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+信息: Registering Spring bean, exporterBean, of type org.saiku.web.rest.resources.ExporterResource as a root resource class
+五月 31, 2017 4:10:09 下午 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+信息: Initiating Jersey application, version 'Jersey: 1.11 12/09/2011 10:27 AM'
+五月 31, 2017 4:10:11 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ChartBase
+五月 31, 2017 4:10:12 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory pentaho-style
+五月 31, 2017 4:10:12 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+五月 31, 2017 4:10:12 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory sw-style
+五月 31, 2017 4:10:12 下午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+五月 31, 2017 4:10:12 下午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+五月 31, 2017 4:10:12 下午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/31  config=null
+五月 31, 2017 4:10:12 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 20629 ms

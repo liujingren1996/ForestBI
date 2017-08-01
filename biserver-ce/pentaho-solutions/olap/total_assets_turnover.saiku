@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Query name="720B7AC2-C91F-B67C-862B-38B85C706481" type="QM" connection="total_assets_turnover" cube="[total_assets_turnover]" catalog="total_assets_turnover" schema="total_assets_turnover">
+  <QueryModel>
+    <Axes>
+      <Axis location="ROWS" nonEmpty="true">
+        <Dimensions>
+          <Dimension name="Dim year" hierarchizeMode="PRE" hierarchyConsistent="true">
+            <Inclusions>
+              <Selection dimension="Dim year" type="level" node="[Dim year.Year].[Year]" operator="MEMBERS" />
+            </Inclusions>
+            <Exclusions />
+          </Dimension>
+        </Dimensions>
+      </Axis>
+      <Axis location="COLUMNS" nonEmpty="true">
+        <Dimensions>
+          <Dimension name="Measures" hierarchizeMode="PRE" hierarchyConsistent="true">
+            <Inclusions>
+              <Selection dimension="Measures" type="member" node="[Measures].[Total assets turnover]" operator="MEMBER" />
+            </Inclusions>
+            <Exclusions />
+          </Dimension>
+          <Dimension name="Dim month" hierarchizeMode="PRE" hierarchyConsistent="true">
+            <Inclusions>
+              <Selection dimension="Dim month" type="level" node="[Dim month.Month].[Month]" operator="MEMBERS" />
+            </Inclusions>
+            <Exclusions />
+          </Dimension>
+        </Dimensions>
+      </Axis>
+      <Axis location="FILTER" nonEmpty="false" />
+    </Axes>
+  </QueryModel>
+  <MDX>SELECT&#xD;
+NON EMPTY CrossJoin({[Measures].[Total assets turnover]}, [Dim month.Month].[Month].Members) ON COLUMNS,&#xD;
+NON EMPTY {Hierarchize({[Dim year.Year].[Year].Members})} ON ROWS&#xD;
+FROM [total_assets_turnover]</MDX>
+  <Totals />
+  <Properties>
+    <Property name="saiku.ui.render.mode" value="table" />
+    <Property name="org.saiku.query.explain" value="true" />
+    <Property name="saiku.olap.query.nonempty.columns" value="true" />
+    <Property name="saiku.olap.query.nonempty.rows" value="true" />
+    <Property name="org.saiku.connection.scenario" value="false" />
+    <Property name="saiku.olap.query.automatic_execution" value="true" />
+    <Property name="saiku.olap.query.drillthrough" value="true" />
+    <Property name="saiku.olap.query.filter" value="true" />
+    <Property name="saiku.olap.query.limit" value="true" />
+    <Property name="saiku.olap.query.nonempty" value="true" />
+  </Properties>
+</Query>
+

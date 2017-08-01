@@ -1,0 +1,46 @@
+2017-08-01 09:05:48,278 WARN  [org.pentaho.hadoop.shim.HadoopConfigurationLocator] Unable to load Hadoop Configuration from "file:///C:/Users/zll/Desktop/4.8/biserver-ce/pentaho-solutions/system/kettle/plugins/pentaho-big-data-plugin/hadoop-configurations/mapr". For more information enable debug logging.
+2017-08-01 09:05:49,213 WARN  [org.pentaho.reporting.libraries.base.boot.PackageManager] Unresolved dependency for package: org.pentaho.reporting.engine.classic.extensions.datasources.cda.CdaModule
+2017-08-01 09:05:49,237 WARN  [org.pentaho.reporting.libraries.base.boot.PackageSorter] A dependent module was not found in the list of known modules.
+2017-08-01 09:05:52,096 ERROR [org.quartz.core.ErrorLogger] An error occured while scanning for the next trigger to fire.
+org.quartz.JobPersistenceException: Couldn't acquire next trigger: Field 'PRIORITY' doesn't have a default value [See nested exception: java.sql.SQLException: Field 'PRIORITY' doesn't have a default value]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1778)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Field 'PRIORITY' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.insertFiredTrigger(StdJDBCDelegate.java:3360)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1771)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+2017-08-01 09:05:52,964 WARN  [org.apache.axis2.description.java2wsdl.DefaultSchemaGenerator] We don't support method overloading. Ignoring [public java.lang.String serializeModels(org.pentaho.metadata.model.Domain,java.lang.String,boolean) throws java.lang.Exception]
+2017-08-01 09:15:39,414 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-01 09:56:20,265 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '本年发生金额'
+2017-08-01 09:58:29,392 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材上期结存量与期末库存结余'
+2017-08-01 09:58:29,394 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材营业利润'
+2017-08-01 09:58:29,438 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材销售收入'
+2017-08-01 10:00:08,574 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '本年发生金额'
+2017-08-01 10:02:06,556 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材上期结存量与期末库存结余'
+2017-08-01 10:02:06,558 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材营业利润'
+2017-08-01 10:02:06,559 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材销售收入'
+2017-08-01 10:05:29,299 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材采运量及木材采运产值年增长率变化比较'
+2017-08-01 10:05:59,168 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '不同年份木材增长率变化'
+2017-08-01 10:05:59,170 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材产量直方图'
+2017-08-01 10:06:25,482 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '不同小班各树种木材产量'
+2017-08-01 10:06:52,660 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '不同年份木材增长率变化'
+2017-08-01 10:06:52,662 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材产量直方图'
+2017-08-01 10:07:56,421 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材上期结存量与期末库存结余'
+2017-08-01 10:07:56,422 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材营业利润'
+2017-08-01 10:07:56,423 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name '木材销售收入'

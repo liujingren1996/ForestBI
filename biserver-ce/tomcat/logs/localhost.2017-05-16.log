@@ -1,0 +1,58 @@
+五月 16, 2017 10:29:18 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+五月 16, 2017 10:29:33 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+五月 16, 2017 6:43:44 下午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+五月 16, 2017 6:46:08 下午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+五月 16, 2017 7:29:05 下午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+五月 16, 2017 7:29:37 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet SystemInfoServlet threw exception
+java.lang.UnsatisfiedLinkError: org.hyperic.sigar.Sigar.getNetInterfaceList()[Ljava/lang/String;
+	at org.hyperic.sigar.Sigar.getNetInterfaceList(Native Method)
+	at system.SysInfo.getAllMAC(SysInfo.java:331)
+	at system.LicenseHandler.check(LicenseHandler.java:16)
+	at SystemInfoServlet.doPost(SystemInfoServlet.java:105)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2017 7:31:34 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet SystemInfoServlet threw exception
+java.lang.UnsatisfiedLinkError: org.hyperic.sigar.Sigar.getNetInterfaceList()[Ljava/lang/String;
+	at org.hyperic.sigar.Sigar.getNetInterfaceList(Native Method)
+	at system.SysInfo.getAllMAC(SysInfo.java:331)
+	at system.LicenseHandler.check(LicenseHandler.java:16)
+	at SystemInfoServlet.doPost(SystemInfoServlet.java:105)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2017 7:34:06 下午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+五月 16, 2017 7:46:51 下午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
