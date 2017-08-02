@@ -438,3 +438,64 @@
 2017/08/01 11:04:56	Session startup actions	32431bfd-7666-11e7-82b6-fb03d1885940	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.017999999225139618
 2017/08/01 11:04:56	Session startup actions	32431bfd-7666-11e7-82b6-fb03d1885940	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.029999999329447746
 2017/08/01 11:04:56	Session startup actions	29A4A004E43E51816032A7A27D572DC3	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	32431bfd-7666-11e7-82b6-fb03d1885940			0.10700000077486038
+2017/08/02 15:28:42	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	36237186-7754-11e7-a0c9-3f97dc15d78e			0.0
+2017/08/02 15:28:42	Global startup actions	36237186-7754-11e7-a0c9-3f97dc15d78e	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_start	start			0.0
+2017/08/02 15:28:42	Global startup actions	36237186-7754-11e7-a0c9-3f97dc15d78e	global-department-list.xaction	SQLLookupRule	system session	component_execution_started	start			0.0
+2017/08/02 15:28:43	Global startup actions	36237186-7754-11e7-a0c9-3f97dc15d78e	global-department-list.xaction	SQLLookupRule	system session	component_execution_ended	end			0.03999999910593033
+2017/08/02 15:28:43	Global startup actions	36237186-7754-11e7-a0c9-3f97dc15d78e	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_end	end			0.05299999937415123
+2017/08/02 15:28:43	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_end	36237186-7754-11e7-a0c9-3f97dc15d78e			0.24799999594688416
+2017/08/02 15:29:04		5593CB42CB697EB94D4E2A93722DDAEE		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:29:12	Session startup actions	5593CB42CB697EB94D4E2A93722DDAEE	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	48180047-7754-11e7-a0c9-3f97dc15d78e			0.0
+2017/08/02 15:29:12	Session startup actions	48180047-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:29:12	Session startup actions	48180047-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:29:13	Session startup actions	48180047-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.13099999725818634
+2017/08/02 15:29:13	Session startup actions	48180047-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.13600000739097595
+2017/08/02 15:29:13	Session startup actions	5593CB42CB697EB94D4E2A93722DDAEE	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	48180047-7754-11e7-a0c9-3f97dc15d78e			0.19599999487400055
+2017/08/02 15:29:45		F798FB8CE1E3AA1A9B25302A695A19AB		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:29:45	Session startup actions	F798FB8CE1E3AA1A9B25302A695A19AB	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	5bce3c39-7754-11e7-a0c9-3f97dc15d78e			0.0
+2017/08/02 15:29:45	Session startup actions	5bce3c39-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:29:45	Session startup actions	5bce3c39-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:29:45	Session startup actions	5bce3c39-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.014000000432133675
+2017/08/02 15:29:45	Session startup actions	5bce3c39-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.024000000208616257
+2017/08/02 15:29:45	Session startup actions	F798FB8CE1E3AA1A9B25302A695A19AB	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	5bce3c39-7754-11e7-a0c9-3f97dc15d78e			0.05000000074505806
+2017/08/02 15:30:02		A4E66F990D6CB40D870D691CEC0B99D1		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:30:02	Session startup actions	A4E66F990D6CB40D870D691CEC0B99D1	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	65d33cda-7754-11e7-a0c9-3f97dc15d78e			0.0
+2017/08/02 15:30:02	Session startup actions	65d33cda-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:30:02	Session startup actions	65d33cda-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:30:02	Session startup actions	65d33cda-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.020999999716877937
+2017/08/02 15:30:02	Session startup actions	65d33cda-7754-11e7-a0c9-3f97dc15d78e	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.029999999329447746
+2017/08/02 15:30:02	Session startup actions	A4E66F990D6CB40D870D691CEC0B99D1	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	65d33cda-7754-11e7-a0c9-3f97dc15d78e			0.05000000074505806
+2017/08/02 15:31:39	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	9fc0085b-7754-11e7-918e-f1fb74528eac			0.0
+2017/08/02 15:31:40	Global startup actions	9fc0085b-7754-11e7-918e-f1fb74528eac	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_start	start			0.0
+2017/08/02 15:31:40	Global startup actions	9fc0085b-7754-11e7-918e-f1fb74528eac	global-department-list.xaction	SQLLookupRule	system session	component_execution_started	start			0.0
+2017/08/02 15:31:40	Global startup actions	9fc0085b-7754-11e7-918e-f1fb74528eac	global-department-list.xaction	SQLLookupRule	system session	component_execution_ended	end			0.02199999988079071
+2017/08/02 15:31:40	Global startup actions	9fc0085b-7754-11e7-918e-f1fb74528eac	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_end	end			0.02800000086426735
+2017/08/02 15:31:40	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_end	9fc0085b-7754-11e7-918e-f1fb74528eac			0.1550000011920929
+2017/08/02 15:32:11		03ED6D62741F33216BD1C49F0EC68D5C		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:32:11	Session startup actions	03ED6D62741F33216BD1C49F0EC68D5C	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	b2519a6c-7754-11e7-918e-f1fb74528eac			0.0
+2017/08/02 15:32:11	Session startup actions	b2519a6c-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:32:11	Session startup actions	b2519a6c-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:32:11	Session startup actions	b2519a6c-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.11699999868869781
+2017/08/02 15:32:11	Session startup actions	b2519a6c-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.12200000137090683
+2017/08/02 15:32:11	Session startup actions	03ED6D62741F33216BD1C49F0EC68D5C	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	b2519a6c-7754-11e7-918e-f1fb74528eac			0.20499999821186066
+2017/08/02 15:32:19		70C7C22F15FBB3499F391291FB271D30		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:32:19	Session startup actions	70C7C22F15FBB3499F391291FB271D30	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	b77f496d-7754-11e7-918e-f1fb74528eac			0.0
+2017/08/02 15:32:19	Session startup actions	b77f496d-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:32:19	Session startup actions	b77f496d-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:32:19	Session startup actions	b77f496d-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.012000000104308128
+2017/08/02 15:32:19	Session startup actions	b77f496d-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.01899999938905239
+2017/08/02 15:32:19	Session startup actions	70C7C22F15FBB3499F391291FB271D30	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	b77f496d-7754-11e7-918e-f1fb74528eac			0.08900000154972076
+2017/08/02 15:32:34		663172DD8FA8A96452B0C52ADBBFB5AC		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:32:38	Session startup actions	663172DD8FA8A96452B0C52ADBBFB5AC	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	c2bcf11e-7754-11e7-918e-f1fb74528eac			0.0
+2017/08/02 15:32:38	Session startup actions	c2bcf11e-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:32:38	Session startup actions	c2bcf11e-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:32:38	Session startup actions	c2bcf11e-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.010999999940395355
+2017/08/02 15:32:38	Session startup actions	c2bcf11e-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.017999999225139618
+2017/08/02 15:32:38	Session startup actions	663172DD8FA8A96452B0C52ADBBFB5AC	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	c2bcf11e-7754-11e7-918e-f1fb74528eac			0.04399999976158142
+2017/08/02 15:32:45		98E6A1498D89474A12655855C5962A68		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
+2017/08/02 15:32:45	Session startup actions	98E6A1498D89474A12655855C5962A68	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_start	c6a723a0-7754-11e7-918e-f1fb74528eac			0.0
+2017/08/02 15:32:45	Session startup actions	c6a723a0-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_start	start			0.0
+2017/08/02 15:32:45	Session startup actions	c6a723a0-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_started	start			0.0
+2017/08/02 15:32:45	Session startup actions	c6a723a0-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.013000000268220901
+2017/08/02 15:32:45	Session startup actions	c6a723a0-7754-11e7-918e-f1fb74528eac	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.017999999225139618
+2017/08/02 15:32:45	Session startup actions	98E6A1498D89474A12655855C5962A68	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	c6a723a0-7754-11e7-918e-f1fb74528eac			0.04399999976158142
