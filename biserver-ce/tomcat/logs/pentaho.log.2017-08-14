@@ -1,0 +1,53 @@
+2017-08-14 14:39:04,822 WARN  [org.pentaho.hadoop.shim.HadoopConfigurationLocator] Unable to load Hadoop Configuration from "file:///C:/Users/zll/Desktop/ForestBI/biserver-ce/pentaho-solutions/system/kettle/plugins/pentaho-big-data-plugin/hadoop-configurations/mapr". For more information enable debug logging.
+2017-08-14 14:39:06,075 WARN  [org.pentaho.reporting.libraries.base.boot.PackageManager] Unresolved dependency for package: org.pentaho.reporting.engine.classic.extensions.datasources.cda.CdaModule
+2017-08-14 14:39:06,090 WARN  [org.pentaho.reporting.libraries.base.boot.PackageSorter] A dependent module was not found in the list of known modules.
+2017-08-14 14:39:08,862 ERROR [org.quartz.core.ErrorLogger] An error occured while scanning for the next trigger to fire.
+org.quartz.JobPersistenceException: Couldn't acquire next trigger: Field 'PRIORITY' doesn't have a default value [See nested exception: java.sql.SQLException: Field 'PRIORITY' doesn't have a default value]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1778)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Field 'PRIORITY' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.insertFiredTrigger(StdJDBCDelegate.java:3360)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1771)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+2017-08-14 14:39:10,605 WARN  [org.apache.axis2.description.java2wsdl.DefaultSchemaGenerator] We don't support method overloading. Ignoring [public java.lang.String serializeModels(org.pentaho.metadata.model.Domain,java.lang.String,boolean) throws java.lang.Exception]
+2017-08-14 14:39:21,904 WARN  [org.pentaho.telemetry.TelemetryEventSender] Exception caught while making telemetry request.
+java.net.UnknownHostException: marketplace.pentaho.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:286)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:79)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:121)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:706)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:386)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:170)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:396)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:324)
+	at org.pentaho.telemetry.TelemetryEventSender.sendRequest(TelemetryEventSender.java:146)
+	at org.pentaho.telemetry.TelemetryEventSender.run(TelemetryEventSender.java:225)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
