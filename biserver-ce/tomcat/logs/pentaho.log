@@ -1,4 +1,7 @@
-2017-08-22 09:03:48,309 ERROR [org.quartz.core.ErrorLogger] An error occured while scanning for the next trigger to fire.
+2017-08-22 09:26:09,573 WARN  [org.pentaho.hadoop.shim.HadoopConfigurationLocator] Unable to load Hadoop Configuration from "file:///C:/Users/zll/Desktop/ForestBI/biserver-ce/pentaho-solutions/system/kettle/plugins/pentaho-big-data-plugin/hadoop-configurations/mapr". For more information enable debug logging.
+2017-08-22 09:26:10,509 WARN  [org.pentaho.reporting.libraries.base.boot.PackageManager] Unresolved dependency for package: org.pentaho.reporting.engine.classic.extensions.datasources.cda.CdaModule
+2017-08-22 09:26:10,528 WARN  [org.pentaho.reporting.libraries.base.boot.PackageSorter] A dependent module was not found in the list of known modules.
+2017-08-22 09:26:12,912 ERROR [org.quartz.core.ErrorLogger] An error occured while scanning for the next trigger to fire.
 org.quartz.JobPersistenceException: Couldn't acquire next trigger: Field 'PRIORITY' doesn't have a default value [See nested exception: java.sql.SQLException: Field 'PRIORITY' doesn't have a default value]
 	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1778)
 	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
@@ -22,7 +25,8 @@ java.sql.SQLException: Field 'PRIORITY' doesn't have a default value
 	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1771)
 	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
 	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
-2017-08-22 09:18:09,169 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:14,510 WARN  [org.apache.axis2.description.java2wsdl.DefaultSchemaGenerator] We don't support method overloading. Ignoring [public java.lang.String serializeModels(org.pentaho.metadata.model.Domain,java.lang.String,boolean) throws java.lang.Exception]
+2017-08-22 09:26:31,485 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -100,13 +104,12 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,182 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,667 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
 	at org.pentaho.platform.plugin.services.pluginmgr.DefaultPluginManager.getFileInfo(DefaultPluginManager.java:530)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:380)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
@@ -179,86 +182,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,195 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
-java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
-	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
-	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
-	at org.pentaho.platform.plugin.services.pluginmgr.DefaultPluginManager.getFileInfo(DefaultPluginManager.java:530)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:380)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:226)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.getSolutionRepositoryDoc(SolutionRepositoryServiceImpl.java:563)
-	at org.pentaho.platform.web.servlet.SolutionRepositoryService.dispatch(SolutionRepositoryService.java:152)
-	at org.pentaho.platform.web.servlet.SolutionRepositoryService.doGet(SolutionRepositoryService.java:78)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.pentaho.platform.web.http.filters.PentahoWebContextFilter.doFilter(PentahoWebContextFilter.java:142)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.pentaho.platform.web.http.filters.PentahoRequestContextFilter.doFilter(PentahoRequestContextFilter.java:84)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:378)
-	at org.springframework.security.intercept.web.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
-	at org.springframework.security.intercept.web.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.ui.ExceptionTranslationFilter.doFilterHttp(ExceptionTranslationFilter.java:101)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.pentaho.platform.web.http.security.SecurityStartupFilter.doFilter(SecurityStartupFilter.java:103)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.providers.anonymous.AnonymousProcessingFilter.doFilterHttp(AnonymousProcessingFilter.java:105)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.pentaho.platform.web.http.security.RequestParameterAuthenticationFilter.doFilter(RequestParameterAuthenticationFilter.java:169)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.ui.basicauth.BasicProcessingFilter.doFilterHttp(BasicProcessingFilter.java:174)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.ui.AbstractProcessingFilter.doFilterHttp(AbstractProcessingFilter.java:278)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.ui.logout.LogoutFilter.doFilterHttp(LogoutFilter.java:89)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.pentaho.platform.web.http.security.HttpSessionReuseDetectionFilter.doFilter(HttpSessionReuseDetectionFilter.java:134)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.context.HttpSessionContextIntegrationFilter.doFilterHttp(HttpSessionContextIntegrationFilter.java:235)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter.doFilterHttp(SecurityContextHolderAwareRequestFilter.java:91)
-	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
-	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
-	at org.springframework.security.util.FilterChainProxy.doFilter(FilterChainProxy.java:175)
-	at org.springframework.security.util.FilterToBeanProxy.doFilter(FilterToBeanProxy.java:99)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.pentaho.platform.web.http.filters.ProxyTrustingFilter.doFilter(ProxyTrustingFilter.java:222)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.pentaho.platform.web.http.filters.SystemStatusFilter.doFilter(SystemStatusFilter.java:60)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.pentaho.platform.web.http.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:113)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:470)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
-	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
-	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
-	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
-	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,205 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,688 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -337,7 +261,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,214 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,703 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -416,7 +340,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,226 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,716 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -495,7 +419,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,242 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,728 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -574,7 +498,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,249 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,740 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -653,7 +577,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,274 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,771 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -732,7 +656,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,295 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,788 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -811,7 +735,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,310 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,835 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -890,7 +814,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,323 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,874 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -969,7 +893,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,333 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,908 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1048,7 +972,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,342 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,939 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1127,7 +1051,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,348 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,964 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1206,7 +1130,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,356 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,977 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1285,14 +1209,12 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,377 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:36,990 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
 	at org.pentaho.platform.plugin.services.pluginmgr.DefaultPluginManager.getFileInfo(DefaultPluginManager.java:530)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:380)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
@@ -1366,14 +1288,12 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,385 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,002 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
 	at org.pentaho.platform.plugin.services.pluginmgr.DefaultPluginManager.getFileInfo(DefaultPluginManager.java:530)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:380)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
-	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
 	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
@@ -1447,7 +1367,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,394 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,025 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1528,7 +1448,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,402 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,044 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1609,7 +1529,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,409 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,054 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1690,7 +1610,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,417 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,072 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1771,7 +1691,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,426 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,085 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1852,7 +1772,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,433 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,097 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -1933,7 +1853,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,442 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,110 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2014,7 +1934,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,452 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,125 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2095,7 +2015,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,460 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,140 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2176,7 +2096,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,468 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,158 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2257,7 +2177,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,475 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,176 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2338,7 +2258,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,482 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,190 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2419,7 +2339,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,489 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,203 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2500,7 +2420,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,496 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,218 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2581,7 +2501,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,504 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,234 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2662,7 +2582,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,513 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,247 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2743,7 +2663,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,521 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,264 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2824,7 +2744,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,528 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,278 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2905,7 +2825,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,535 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,291 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -2986,7 +2906,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,542 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,307 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3067,7 +2987,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,549 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,320 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3148,7 +3068,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,557 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,337 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3229,7 +3149,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,564 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,354 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3310,7 +3230,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,571 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,368 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3391,7 +3311,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,582 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,385 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3472,7 +3392,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,592 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,404 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3553,7 +3473,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,599 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,424 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3634,7 +3554,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,615 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,440 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3715,7 +3635,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,623 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,456 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3796,7 +3716,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,662 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,475 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3877,7 +3797,169 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,673 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,496 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
+	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
+	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
+	at org.pentaho.platform.plugin.services.pluginmgr.DefaultPluginManager.getFileInfo(DefaultPluginManager.java:530)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:380)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:226)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.getSolutionRepositoryDoc(SolutionRepositoryServiceImpl.java:563)
+	at org.pentaho.platform.web.servlet.SolutionRepositoryService.dispatch(SolutionRepositoryService.java:152)
+	at org.pentaho.platform.web.servlet.SolutionRepositoryService.doGet(SolutionRepositoryService.java:78)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.PentahoWebContextFilter.doFilter(PentahoWebContextFilter.java:142)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.PentahoRequestContextFilter.doFilter(PentahoRequestContextFilter.java:84)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:378)
+	at org.springframework.security.intercept.web.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.intercept.web.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.ExceptionTranslationFilter.doFilterHttp(ExceptionTranslationFilter.java:101)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.SecurityStartupFilter.doFilter(SecurityStartupFilter.java:103)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.providers.anonymous.AnonymousProcessingFilter.doFilterHttp(AnonymousProcessingFilter.java:105)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.RequestParameterAuthenticationFilter.doFilter(RequestParameterAuthenticationFilter.java:169)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.basicauth.BasicProcessingFilter.doFilterHttp(BasicProcessingFilter.java:174)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.AbstractProcessingFilter.doFilterHttp(AbstractProcessingFilter.java:278)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.logout.LogoutFilter.doFilterHttp(LogoutFilter.java:89)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.HttpSessionReuseDetectionFilter.doFilter(HttpSessionReuseDetectionFilter.java:134)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.context.HttpSessionContextIntegrationFilter.doFilterHttp(HttpSessionContextIntegrationFilter.java:235)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter.doFilterHttp(SecurityContextHolderAwareRequestFilter.java:91)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.util.FilterChainProxy.doFilter(FilterChainProxy.java:175)
+	at org.springframework.security.util.FilterToBeanProxy.doFilter(FilterToBeanProxy.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.ProxyTrustingFilter.doFilter(ProxyTrustingFilter.java:222)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.SystemStatusFilter.doFilter(SystemStatusFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:470)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:748)
+2017-08-22 09:26:37,514 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
+	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
+	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
+	at org.pentaho.platform.plugin.services.pluginmgr.DefaultPluginManager.getFileInfo(DefaultPluginManager.java:530)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:380)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:274)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.processRepositoryFile(SolutionRepositoryServiceImpl.java:226)
+	at org.pentaho.platform.repository.solution.SolutionRepositoryServiceImpl.getSolutionRepositoryDoc(SolutionRepositoryServiceImpl.java:563)
+	at org.pentaho.platform.web.servlet.SolutionRepositoryService.dispatch(SolutionRepositoryService.java:152)
+	at org.pentaho.platform.web.servlet.SolutionRepositoryService.doGet(SolutionRepositoryService.java:78)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.PentahoWebContextFilter.doFilter(PentahoWebContextFilter.java:142)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.PentahoRequestContextFilter.doFilter(PentahoRequestContextFilter.java:84)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:378)
+	at org.springframework.security.intercept.web.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.intercept.web.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.ExceptionTranslationFilter.doFilterHttp(ExceptionTranslationFilter.java:101)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.SecurityStartupFilter.doFilter(SecurityStartupFilter.java:103)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.providers.anonymous.AnonymousProcessingFilter.doFilterHttp(AnonymousProcessingFilter.java:105)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.RequestParameterAuthenticationFilter.doFilter(RequestParameterAuthenticationFilter.java:169)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.basicauth.BasicProcessingFilter.doFilterHttp(BasicProcessingFilter.java:174)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.AbstractProcessingFilter.doFilterHttp(AbstractProcessingFilter.java:278)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.logout.LogoutFilter.doFilterHttp(LogoutFilter.java:89)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.HttpSessionReuseDetectionFilter.doFilter(HttpSessionReuseDetectionFilter.java:134)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.context.HttpSessionContextIntegrationFilter.doFilterHttp(HttpSessionContextIntegrationFilter.java:235)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter.doFilterHttp(SecurityContextHolderAwareRequestFilter.java:91)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.util.FilterChainProxy.doFilter(FilterChainProxy.java:175)
+	at org.springframework.security.util.FilterToBeanProxy.doFilter(FilterToBeanProxy.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.ProxyTrustingFilter.doFilter(ProxyTrustingFilter.java:222)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.SystemStatusFilter.doFilter(SystemStatusFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:470)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:748)
+2017-08-22 09:26:37,534 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -3957,7 +4039,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,679 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,549 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -4037,7 +4119,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,686 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,564 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -4117,7 +4199,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,692 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,578 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -4197,7 +4279,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,700 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,594 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -4277,7 +4359,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,715 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,608 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -4355,7 +4437,7 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:18:09,719 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
+2017-08-22 09:26:37,617 ERROR [org.pentaho.cdf.CdfFileInfoGenerator] CdfFileInfoGenerator.ERROR_0001 - Error Parsing XCDF File
 java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: java.util.ServiceConfigurationError: javax.xml.xpath.XPathFactory: jar:file:/C:/Users/zll/Desktop/ForestBI/biserver-ce/tomcat/webapps/pentaho/WEB-INF/lib/saxon-xpath-8.5.1.jar!/META-INF/services/javax.xml.xpath.XPathFactory:1: Illegal configuration-file syntax
 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:102)
 	at org.pentaho.cdf.CdfFileInfoGenerator.getFileInfo(CdfFileInfoGenerator.java:43)
@@ -4432,7 +4514,14 @@ java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPath
 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
-2017-08-22 09:19:21,726 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
-2017-08-22 09:19:21,886 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
-2017-08-22 09:19:21,913 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
-2017-08-22 09:19:22,075 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:37:20,313 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:37:23,083 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:37:23,228 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:37:23,273 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:37:23,294 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:37:23,310 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:38:01,607 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:38:01,620 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:38:01,632 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:38:01,648 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
+2017-08-22 16:38:01,662 WARN  [org.pentaho.reporting.engine.classic.core.states.datarow.FastGlobalView] Warning: Data-Set does not contain a column with name ''
