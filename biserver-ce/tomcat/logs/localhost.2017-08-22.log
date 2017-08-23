@@ -78,3 +78,5 @@ java.lang.NullPointerException
 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
 	at java.lang.Thread.run(Thread.java:748)
 
+八月 22, 2017 7:01:50 下午 org.apache.catalina.core.ApplicationContext log
+信息: Closing Spring root WebApplicationContext
