@@ -1,0 +1,24 @@
+2017-08-26 09:26:29,067 ERROR [org.quartz.core.ErrorLogger] An error occured while scanning for the next trigger to fire.
+org.quartz.JobPersistenceException: Couldn't acquire next trigger: Field 'PRIORITY' doesn't have a default value [See nested exception: java.sql.SQLException: Field 'PRIORITY' doesn't have a default value]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1778)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Field 'PRIORITY' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.insertFiredTrigger(StdJDBCDelegate.java:3360)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:1771)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1218)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
