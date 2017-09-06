@@ -8521,3 +8521,10 @@
 2017/09/04 23:49:53	Session startup actions	b15951d9-9188-11e7-a02d-f724b4a3caa7	session-region-list.xaction	JavascriptRule	joe	component_execution_ended	end			0.00800000037997961
 2017/09/04 23:49:53	Session startup actions	b15951d9-9188-11e7-a02d-f724b4a3caa7	session-region-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	joe	action_sequence_end	end			0.014000000432133675
 2017/09/04 23:49:53	Session startup actions	CC641C325099B4FDE8035E60551A11CA	session-region-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	joe	instance_end	b15951d9-9188-11e7-a02d-f724b4a3caa7			0.027000000700354576
+2017/09/06 10:57:00	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	0deb8443-92af-11e7-925c-fd29cb858af0			0.0
+2017/09/06 10:57:00	Global startup actions	0deb8443-92af-11e7-925c-fd29cb858af0	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_start	start			0.0
+2017/09/06 10:57:01	Global startup actions	0deb8443-92af-11e7-925c-fd29cb858af0	global-department-list.xaction	SQLLookupRule	system session	component_execution_started	start			0.0
+2017/09/06 10:57:01	Global startup actions	0deb8443-92af-11e7-925c-fd29cb858af0	global-department-list.xaction	SQLLookupRule	system session	component_execution_ended	end			0.02500000037252903
+2017/09/06 10:57:01	Global startup actions	0deb8443-92af-11e7-925c-fd29cb858af0	global-department-list.xaction	org.pentaho.platform.engine.services.runtime.RuntimeContext	system session	action_sequence_end	end			0.03400000184774399
+2017/09/06 10:57:01	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_end	0deb8443-92af-11e7-925c-fd29cb858af0			0.17900000512599945
+2017/09/06 10:57:08		1F74710C454DDFADDBDCB6E5F93B6F9F		org.pentaho.platform.web.http.session.PentahoHttpSession		session_start				0.0
