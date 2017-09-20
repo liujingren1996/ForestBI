@@ -1,0 +1,127 @@
+九月 20, 2017 10:30:32 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Dell\DW WLAN Card;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Program Files\WIDCOMM\Bluetooth Software\;c:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\QuickTime\QTSystem\;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Users\jinqing\AppData\Local\Microsoft\WindowsApps;;.
+九月 20, 2017 10:30:34 上午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+九月 20, 2017 10:30:34 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 3328 ms
+九月 20, 2017 10:30:34 上午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+九月 20, 2017 10:30:34 上午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.29
+九月 20, 2017 10:30:34 上午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor pentaho.xml
+九月 20, 2017 10:30:48 上午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+信息: WARNING: Security role name PENTAHO_ADMIN used in an <auth-constraint> without being defined in a <security-role>
+九月 20, 2017 10:31:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory pentaho-style
+九月 20, 2017 10:31:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+九月 20, 2017 10:31:42 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory sw-style
+九月 20, 2017 10:31:42 上午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+九月 20, 2017 10:31:42 上午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+九月 20, 2017 10:31:43 上午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/87  config=null
+九月 20, 2017 10:31:43 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 68638 ms
+九月 20, 2017 10:33:37 上午 org.apache.jasper.compiler.JDTCompiler$1 findType
+严重: Compilation error
+org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:342)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:206)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:163)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:96)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:97)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:167)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getType(Scope.java:2187)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:974)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1164)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:366)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:623)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:429)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:327)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:314)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:317)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:646)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:436)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:374)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:302)
+	at org.pentaho.platform.web.http.filters.SystemStatusFilter.doFilter(SystemStatusFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.pentaho.platform.web.http.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:470)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:748)
+
+九月 20, 2017 10:37:18 上午 org.apache.catalina.startup.Catalina stopServer
+严重: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:338)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:416)
+
+九月 20, 2017 10:37:29 上午 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Dell\DW WLAN Card;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Program Files\WIDCOMM\Bluetooth Software\;c:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\QuickTime\QTSystem\;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\Users\jinqing\AppData\Local\Microsoft\WindowsApps;;.
+九月 20, 2017 10:37:30 上午 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+九月 20, 2017 10:37:30 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1775 ms
+九月 20, 2017 10:37:30 上午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+九月 20, 2017 10:37:30 上午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.29
+九月 20, 2017 10:37:30 上午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor pentaho.xml
+九月 20, 2017 10:37:33 上午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+信息: WARNING: Security role name PENTAHO_ADMIN used in an <auth-constraint> without being defined in a <security-role>
+九月 20, 2017 10:38:12 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory pentaho-style
+九月 20, 2017 10:38:13 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+九月 20, 2017 10:38:13 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory sw-style
+九月 20, 2017 10:38:13 上午 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+九月 20, 2017 10:38:13 上午 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+九月 20, 2017 10:38:13 上午 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/85  config=null
+九月 20, 2017 10:38:13 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 43172 ms
